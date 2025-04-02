@@ -1,0 +1,38 @@
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 20px;
+    padding: 20px;
+}
+
+.profileList {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); 
+    gap: 20px;
+    flex: 1; 
+}
+
+
+.mapContainer {
+    width: 40%; 
+    min-width: 350px;
+    height: 500px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+@media (max-width: 900px) {
+    .container {
+        flex-direction: column; 
+    }
+
+    .mapContainer {
+        width: 100%; 
+        height: 400px;
+    }
+}
